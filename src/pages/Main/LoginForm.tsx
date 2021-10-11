@@ -37,7 +37,7 @@ export default function LoginForm() {
           {...register("nickname")}
         ></InputText>
         {errors.nickname?.message && (
-          <ErrorText>{errors.nickname?.message}</ErrorText>
+          <ErrorText data-testid="error">{errors.nickname?.message}</ErrorText>
         )}
       </FormControl>
       <FormControl>
@@ -49,7 +49,7 @@ export default function LoginForm() {
           {...register("password", { required: true })}
         ></InputText>
         {errors.password?.message && (
-          <ErrorText>{errors.password?.message}</ErrorText>
+          <ErrorText data-testid="error">{errors.password?.message}</ErrorText>
         )}
       </FormControl>
       <FormControl>
