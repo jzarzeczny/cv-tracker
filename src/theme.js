@@ -1,6 +1,7 @@
 const theme = {
   colors: {
     primary: {
+      veryLight: "#D5CEDE",
       light: "#8D86C9",
       normal: "#9067C6",
     },
@@ -27,6 +28,10 @@ const theme = {
       nomrmal: "1rem",
       big: "1.25rem",
     },
+  },
+  screen: {
+    tablet: "768px",
+    desktop: "1200px",
   },
 };
 
