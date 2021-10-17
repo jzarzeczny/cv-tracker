@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import LoginForm from "../LoginForm";
+import LoginForm from "../components/LoginForm";
 import { ThemeProvider } from "styled-components";
 import theme from "../../../theme";
 import { debug } from "console";

@@ -7,11 +7,12 @@ const theme = {
     },
     secondary: {
       main: "#84C0C6",
+      dark: "#46B1C9",
     },
     gray: {
-      300: "#B8B8B8",
+      light: "#B8B8B8",
       normal: "#808080",
-      700: "#303030",
+      dark: "#303030",
     },
     white: "#fff",
     black: "#0B2545",

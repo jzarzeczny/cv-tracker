@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import LoginForm from "./LoginForm";
-import RegisterForm from "./RegisterForm";
-import Hero from "./Hero";
+import LoginForm from "./components/LoginForm";
+import RegisterForm from "./components/RegisterForm";
+import Hero from "./components/Hero";
 import {
   FormButton,
   FormButtonsContainer,
   LoginFormContainer,
-} from "./styled/Form.styled";
+} from "./components/styled/Form.styled";
 import { MainContainer } from "../../components/Container.styled";
 
 export default function Main() {

@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroDecorationsImage, HeroImg } from "../../images/Hero/index";
+import { HeroDecorationsImage, HeroImg } from "../../../images/Hero/index";
 import {
   HeroContainer,
   HeroImage,
