@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import LoginForm from "./LoginForm";
 import RegisterForm from "./RegisterForm";
+import Hero from "./Hero";
 import {
   FormButton,
   FormButtonsContainer,
   LoginFormContainer,
-} from "./styled/LoginForm.styled";
+} from "./styled/Form.styled";
+import { MainContainer } from "../../components/Container.styled";
 
-type Active = {
-  active: boolean;
-};
 export default function Main() {
   const [register, setRegister] = useState(false);
 
@@ -19,7 +18,8 @@ export default function Main() {
 
   console.log(register);
   return (
-    <div>
+    <MainContainer>
+      <Hero />
       <LoginFormContainer>
         <FormButtonsContainer>
           <FormButton
@@ -39,6 +39,6 @@ export default function Main() {
         </FormButtonsContainer>
         {register ? <RegisterForm /> : <LoginForm />}
       </LoginFormContainer>
-    </div>
+    </MainContainer>
   );
 }

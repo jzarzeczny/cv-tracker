@@ -3,6 +3,13 @@ import styled from "styled-components";
 export const LoginFormContainer = styled.div`
   margin: 1rem;
   border: 2px solid ${({ theme }) => theme.colors.primary.normal};
+  @media (min-width: ${({ theme }) => theme.screen.tablet}) {
+    margin: 2rem;
+    max-width: 400px;
+  }
+  @media (min-width: ${({ theme }) => theme.screen.tablet}) {
+    margin: 3rem;
+  }
 `;
 
 export const FormButtonsContainer = styled.div`
@@ -23,10 +30,13 @@ export const FormButton = styled.button`
 
 export const Form = styled.form`
   padding: 1rem;
-  width: 100%;
   display: flex;
+  margin: 1rem auto 0;
   flex-direction: column;
   align-items: center;
+  @media (min-width: ${({ theme }) => theme.screen.tablet}) {
+    margin: 0 auto;
+  }
 `;
 export const FormControl = styled.div`
   margin-top: 2rem;
@@ -34,6 +44,7 @@ export const FormControl = styled.div`
   display: block;
   position: relative;
 `;
+
 export const Label = styled.label`
   display: block;
   font-weight: ${({ theme }) => theme.font.weight.light};
@@ -44,6 +55,13 @@ export const InputText = styled.input`
   padding: 0.25rem;
   border: 1px solid ${({ theme }) => theme.colors.primary.normal};
   border-radius: 5px;
+  @media (min-width: ${({ theme }) => theme.screen.tablet}) {
+    padding: 0.5rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.screen.desktop}) {
+    padding: 0.75rem;
+  }
 `;
 
 export const ErrorText = styled.span`
@@ -62,4 +80,13 @@ export const SubmitButton = styled.input`
   color: ${({ theme }) => theme.colors.white};
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &:hover {
+    transform: scale(1.02);
+  }
+  &:active {
+    transform: scale(0.98);
+  }
 `;

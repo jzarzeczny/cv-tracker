@@ -6,7 +6,7 @@ import {
   FormControl,
   ErrorText,
   SubmitButton,
-} from "./styled/LoginForm.styled";
+} from "./styled/Form.styled";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
