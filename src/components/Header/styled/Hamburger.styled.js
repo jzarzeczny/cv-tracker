@@ -12,6 +12,7 @@ const StyledHamburger = styled.button`
   align-items: center;
   overflow: hidden;
   cursor: pointer;
+  z-index: 1;
 `;
 const Line = styled.div`
   position: absolute;
