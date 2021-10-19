@@ -12,7 +12,7 @@ function Header() {
   console.log(open);
   return (
     <StyledHeader>
-      <Logo>traCV</Logo>
+      <Logo dir="rtl">traCV</Logo>
       <Hamburger open={open} toggleNav={toggleNav} />
       <Navbar open={open} />
     </StyledHeader>

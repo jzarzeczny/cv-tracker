@@ -3,7 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 1400px;
   max-width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
 `;
 
 export const MainContainer = styled(Container)`
@@ -11,7 +15,6 @@ export const MainContainer = styled(Container)`
     display: flex;
     flex-flow: row nowrap;
     height: 100vh;
-
     & > * {
       flex: 1;
     }

@@ -9,7 +9,8 @@ export const StyledHeader = styled.header`
   padding: 0 1rem;
 `;
 
-export const Logo = styled.h1`
+export const Logo = styled.bdo`
+  justify-self: start;
   font-size: 30px;
   font-weight: ${({ theme }) => theme.font.weight.extraBold};
   color: ${({ theme }) => theme.colors.secondary.dark};

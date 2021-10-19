@@ -12,13 +12,15 @@ const StyledHamburger = styled.button`
   align-items: center;
   overflow: hidden;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 `;
 const Line = styled.div`
   position: absolute;
   width: 25px;
   height: 3px;
-  background-color: #000;
+  background-color: ${({ theme, open }) =>
+    open ? theme.colors.white : "#000"};
+
   transition: all 0.5s ease;
 
   &:first-of-type {

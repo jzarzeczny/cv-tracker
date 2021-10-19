@@ -1,11 +1,13 @@
-import React from "react";
 import {
   ActionGreet,
   ActionMenuContainer,
   ActionStatsContainer,
+  ReactionIcon,
+  SendIcon,
   StatsCard,
   StatsCardContainer,
   StatsHeader,
+  StatsHeading,
   StatsIcon,
 } from "./styled/ActionMenu.styled";
 
@@ -19,7 +21,24 @@ export default function ActionMenu() {
         <StatsIcon />
         <StatsHeader>Statistics</StatsHeader>
         <StatsCardContainer>
-          <StatsCard />
+          <StatsHeading>This week:</StatsHeading>
+          <StatsCard>
+            <SendIcon />
+            CV sent: X
+          </StatsCard>
+          <StatsCard>
+            <ReactionIcon />
+            Reactions: X
+          </StatsCard>
+          <StatsHeading>Total:</StatsHeading>
+          <StatsCard>
+            <SendIcon />
+            CV sent: X
+          </StatsCard>
+          <StatsCard>
+            <ReactionIcon />
+            Reactions: X
+          </StatsCard>
         </StatsCardContainer>
       </ActionStatsContainer>
     </ActionMenuContainer>

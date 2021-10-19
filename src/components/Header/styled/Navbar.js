@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const StyledNavbar = styled.nav`
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   background-color: ${({ theme }) => theme.colors.primary.normal};
@@ -14,6 +15,7 @@ const StyledList = styled.ul`
   justify-content: space-evenly;
   height: 100vh;
   width: 200px;
+  overflow-x: hidden;
 `;
 
 const StyledListElement = styled.li`
