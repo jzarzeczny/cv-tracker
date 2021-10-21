@@ -9,6 +9,7 @@ function Dashboard() {
       <Header />
       <ActionMenu />
       <Search />
+      <Cards />
     </Container>
   );
 }
