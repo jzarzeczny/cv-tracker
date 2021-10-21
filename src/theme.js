@@ -4,6 +4,7 @@ const theme = {
       veryLight: "#D5CEDE",
       light: "#8D86C9",
       normal: "#9067C6",
+      dark: "#242038",
     },
     secondary: {
       main: "#84C0C6",

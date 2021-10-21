@@ -23,6 +23,10 @@ export const CategoryCheck = styled.input.attrs({ type: "radio" })`
 
 export const CategoryPseudoCheck = styled.div`
   padding: 0.75rem 1.5rem;
-  border: 2px solid black;
-  background: ${({ checked, theme }) => checked && theme.colors.gray.light};
+  border-radius: 12px;
+  background: ${({ checked, theme }) =>
+    checked ? theme.colors.primary.dark : theme.colors.primary.normal};
+  transition: background 0.3s ease;
+
+  color: ${({ theme }) => theme.colors.white};
 `;

@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const SearchBoxContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.primary.light};
   margin: 0 1rem;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
   padding: 1rem 0;
 `;
 
